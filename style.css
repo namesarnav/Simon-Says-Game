@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+}
+.red {
+    background-color:#ff5959;
+}
+.green {
+    background-color:#59ff8b;
+}
+.blue {
+    background-color:#5988ff;
+}
+.yellow {
+    background-color:#f9ff59;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn {
+    padding: 5rem;
+    margin: 1rem 0.5rem;
+    border: 0.1rem solid black;
+}
+
+.flash{
+    background-color: white;
+}
+
