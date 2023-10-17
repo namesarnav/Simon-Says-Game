@@ -35,7 +35,7 @@ function btnFlash(btn) {
     }, 100) 
 }
 
-function levelUp() {
+function levelUp() {    
     userSeq = [];
     // This will start the game and level up each time it is called, and flash the button
     level ++; 
@@ -48,7 +48,6 @@ function levelUp() {
     console.log(randBtn)
     gameSeq.push(randColor)
     btnFlash(randBtn);
-
 }
 
 function btnPress() {
@@ -57,7 +56,8 @@ function btnPress() {
     //
     let btn = this;
     btnFlash(btn);
-    
+
+    // fetch the id of the button and push it into the user sequence 
     let userColor = btn.getAttribute('id');
     console.log(userColor)
     userSeq.push(userColor) 
@@ -95,9 +95,9 @@ function checkBtn(idx) {
 }
 
 function reset() {
+// When the function is called it will reset all the variables to it's initial values 
     started = false;
     gameSeq = [];
     userSeq = [];
     level = 0;
-    // score = 0
 }
